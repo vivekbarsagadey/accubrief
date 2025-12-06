@@ -1,17 +1,49 @@
 {
+    // =============================================
+    // Spell Check Configuration
+    // =============================================
+    "cSpell.enabled": true,
+    "cSpell.language": "en",
+    "cSpell.enableFiletypes": [
+        "python",
+        "typescript",
+        "typescriptreact",
+        "javascript",
+        "javascriptreact",
+        "markdown",
+        "json",
+        "yaml"
+    ],
+    "cSpell.ignorePaths": [
+        "node_modules/**",
+        ".git/**",
+        "**/__pycache__/**",
+        "**/.venv/**",
+        "**/venv/**",
+        "**/dist/**",
+        "**/build/**",
+        "**/*.min.js",
+        "**/package-lock.json",
+        "**/*.lock"
+    ],
     "cSpell.words": [
         "Accu",
         "accubrief",
+        "addopts",
+        "alembic",
         "chatagent",
         "coturn",
         "dataavailable",
         "dataclass",
         "Deepgram",
+        "diarization",
         "fastapi",
         "hashlib",
         "hexdigest",
         "hmac",
         "isoformat",
+        "langchain",
+        "langgraph",
         "LRANGE",
         "markitdown",
         "Mediasoup",
@@ -31,8 +63,15 @@
         "sqlalchemy",
         "tablename",
         "timedelta",
+        "transcription",
         "unmute",
         "utcnow",
-        "webrtc"
-    ]
+        "webrtc",
+        "webhook"
+    ],
+    
+    // =============================================
+    // Task Runner Configuration
+    // =============================================
+    "tasks.autoDetect": "on"
 }

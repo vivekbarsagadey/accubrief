@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Spell Check",
+            "type": "shell",
+            "command": "./infrastructure/scripts/spellcheck.sh",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Spell Check (Quiet)",
+            "type": "shell",
+            "command": "./infrastructure/scripts/spellcheck.sh --quiet",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Spell Check Current File",
+            "type": "shell",
+            "command": "cspell",
+            "args": ["${file}"],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
